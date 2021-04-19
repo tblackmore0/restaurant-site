@@ -3,6 +3,8 @@
     margin: 0;
     height: 100%;
     width: 100%;
+    max-width: 100%; 
+    overflow-x: hidden; 
 }
 
 #content {
@@ -24,16 +26,98 @@
         position: absolute;
         z-index: 2;
         clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 100%);
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
+
+        .homeTitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 80px;
+            color:  rgb(231, 245, 155);
+            text-align: center;
+            justify-content: center;
+            text-justify: center;
+            margin-top: 5%;
+            height: 20%;
+            width: 50%;
+            margin-left: 35%;
+            border: 5px solid rgb(231, 245, 155);
+            overflow: hidden;
+        }
+
+
+        .homeBody {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            color: rgb(231, 245, 155);
+            text-align: center;
+            align-items: center;
+            padding-left: 28%;
+            padding-right: 10%;
+            height: 35%;
+            padding-top: 5%;
+            overflow: hidden;
+
+        }
+
+        .est {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            color: rgb(231, 245, 155);
+            text-align: center;
+            align-items: center;
+            padding-left: 32%;
+            padding-right: 15%;
+            padding-top: 5%;
+            height: 20%;
+            overflow: hidden;
+    
+        }
+
+    @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
 
 
 .navBar {
-    border-bottom: 2px solid goldenrod;
+    border-bottom: 2px solid rgb(231, 245, 155);
     background-color:rgba(12, 12, 51, 0.5);
     width: 100%;
     height: 7%;
     display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 100%;
 }
+
+    .navMenu {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        overflow: hidden;
+        max-height: 100%;
+    }
+
+        .navLink {
+            overflow: hidden;
+            max-height: 100%;
+            color:  rgb(231, 245, 155);
+            height: fit-content;
+            width: fit-content;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 15px;
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+        }
 
 /*
 .footer {
@@ -43,3 +127,5 @@
     height: 4%;
     display: flex;
 }
+*/
+
