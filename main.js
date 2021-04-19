@@ -1,1 +1,1 @@
-console.log("Hey");
+(()=>{"use strict";!function(){let e=document.getElementById("content"),t=document.createElement("div");t.className="navBar",e.appendChild(t)}()})();
