@@ -1,1 +1,1 @@
-(()=>{"use strict";!function(){let e=document.getElementById("content"),t=document.createElement("div");t.className="navBar",e.appendChild(t)}()})();
+(()=>{"use strict";!function(){let e=document.getElementById("content"),t=document.createElement("div"),n=document.createElement("div"),a=document.createElement("div");t.className="navBar",n.className="main",a.className="textBox",e.appendChild(t),e.appendChild(n),n.appendChild(a)}()})();
