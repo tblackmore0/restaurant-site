@@ -3,7 +3,6 @@ function initialLoad () {
 
     let navBar = document.createElement('nav');
     let main = document.createElement('div');
-//    let footer = document.createElement('div');
     let textBox = document.createElement('div');
         let homeTitle = document.createElement('h1');
         let homeBody = document.createElement('p');
@@ -25,6 +24,11 @@ function initialLoad () {
         let menuLinkText = document.createTextNode('Menu');
         let contactLinkText = document.createTextNode('Contact');
 
+    let menuNav = document.createElement('div');
+    let menuItems = document.createElement('div');
+    let menuItem1 = document.createTextNode('')
+
+
     homeLink.id = 'homeLinkButton';
     menuLink.id = 'menuLinkButton';
     contactLink.id = 'contactLinkButton';
@@ -39,7 +43,6 @@ function initialLoad () {
         homeLink.className = 'navLink';
         menuLink.className = 'navLink';
         contactLink.className = 'navLink';
-//    footer.className = 'footer';
     main.className = 'main';
         textBox.className = 'textBox';
             homeTitle.className = 'homeTitle';
@@ -61,8 +64,6 @@ function initialLoad () {
             homeBody.appendChild(homeBodyText);
             est.appendChild(estText);
             
-
-//    content.appendChild(footer);
     navBar.appendChild(navMenu);
     navMenu.appendChild(homeLink);
     navMenu.appendChild(menuLink);
