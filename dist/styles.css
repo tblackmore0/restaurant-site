@@ -178,6 +178,14 @@
             transform: translate(0,-10%);
         }
 
+
+        .notransition {
+            -webkit-transition: none !important;
+            -moz-transition: none !important;
+            -o-transition: none !important;
+            transition: none !important;
+          }
+
 /*
 .footer {
     border-top: 2px solid goldenrod;

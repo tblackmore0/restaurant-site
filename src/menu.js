@@ -1,0 +1,5 @@
+function menuPageLoad () {
+    
+}
+
+export {menuPageLoad}
