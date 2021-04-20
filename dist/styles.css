@@ -8,7 +8,7 @@
 }
 
 #content {
-    background-image: url('/Images/Homepage.jpeg');
+    background-image: url('/dist/Images/Homepage.jpeg');
     background-size: cover;
 }
 
@@ -34,7 +34,7 @@
 
         .homeTitle {
             font-family: 'Playfair Display', serif;
-            font-size: 80px;
+            font-size: 6vw;
             color:  rgb(231, 245, 155);
             text-align: center;
             justify-content: center;
@@ -50,7 +50,7 @@
 
         .homeBody {
             font-family: 'Playfair Display', serif;
-            font-size: 30px;
+            font-size: 2vw;
             color: rgb(231, 245, 155);
             text-align: center;
             align-items: center;
@@ -64,7 +64,7 @@
 
         .est {
             font-family: 'Playfair Display', serif;
-            font-size: 30px;
+            font-size: 2.5vw;
             color: rgb(231, 245, 155);
             text-align: center;
             align-items: center;
@@ -103,6 +103,8 @@
         height: 100%;
         overflow: hidden;
         max-height: 100%;
+        justify-content: center;
+        align-items: flex-end;
     }
 
         .navLink {
@@ -111,12 +113,11 @@
             color:  rgb(231, 245, 155);
             height: fit-content;
             width: fit-content;
-            margin-right: 50px;
-            margin-left: 50px;
-            margin-top: 15px;
             text-decoration: none;
             font-family: 'Playfair Display', serif;
-            font-size: 20px;
+            font-size: 1.5vw;
+            margin-left: 10%;
+            margin-right: 10%;
         }
 
 /*
