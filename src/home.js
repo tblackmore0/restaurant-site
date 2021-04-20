@@ -25,9 +25,14 @@ function homePageLoad () {
         let menuLinkText = document.createTextNode('Menu');
         let contactLinkText = document.createTextNode('Contact');
 
-    homeLink.href = '';
-    menuLink.href = '';
-    contactLink.href = '';
+    homeLink.id = 'homeLinkButton';
+    menuLink.id = 'menuLinkButton';
+    contactLink.id = 'contactLinkButton';
+    textBox.id = 'textBox';
+    main.id = 'main';
+    homeTitle.id = 'homeTitle';
+    homeBody.id = 'homeBody';
+    est.id = 'est';
 
     navBar.className = 'navBar';
     navMenu.className = 'navMenu';
