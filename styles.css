@@ -317,19 +317,36 @@
         display: none;
         order: 3;
         width: 100%;
-        grid-template-columns: repeat(2, auto);
+        max-width: 100%;
+        grid-template-columns: repeat(2, 50%);
         transition: all 0.2s ease-in;
+        overflow: hidden;
+        justify-content: center;
+        justify-items: center;
         
     }
 
         .menuItem {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5vw;
+            font-size: 1.35vw;
             color:  rgb(231, 245, 155);
             text-align: center;
-            justify-content: center;
-            height: auto;
-            width: auto;
+            justify-content:flex-start;
             display: none;
+            flex-direction: column;
             transition: all 0.2s ease-in;
+            padding-left: 15%;
+            padding-right: 15%;
+            overflow: hidden;
+            max-width: 100%;
         }
+
+    u {
+        text-decoration-line: underline;
+        text-decoration-color: rgb(231, 245, 155);
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        overflow: hidden;
+        padding-bottom: 3%;
+    }
