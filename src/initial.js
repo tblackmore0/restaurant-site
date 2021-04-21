@@ -24,9 +24,19 @@ function initialLoad () {
         let menuLinkText = document.createTextNode('Menu');
         let contactLinkText = document.createTextNode('Contact');
 
+    let menuInitial = document.createElement('div')
     let menuNav = document.createElement('div');
-    let menuItems = document.createElement('div');
-    let menuItem1 = document.createTextNode('')
+    let lunchToggle = document.createElement('div');
+    let dinnerToggle = document.createElement('div');
+    let lunchMenu = document.createElement('div');
+    let dinnerMenu = document.createElement('div');
+
+    let initialLunch = document.createElement('div');
+    let initialDinner = document.createElement('div');
+        let initialLunchText = document.createTextNode('');
+        let initialDinnerText = document.createTextNode('');
+        initialLunch.innerHTML = 'Lunch<br/>12-2';
+        initialDinner.innerHTML = 'Dinner<br/>6-9';
 
 
     homeLink.id = 'homeLinkButton';
@@ -37,6 +47,19 @@ function initialLoad () {
     homeTitle.id = 'homeTitle';
     homeBody.id = 'homeBody';
     est.id = 'est';
+    initialLunch.id = 'initialLunch';
+    initialDinner.id = 'initialDinner';
+
+    menuInitial.id = 'menuInitial';
+    initialLunch.id = 'initialLunch';
+    initialDinner.id = 'initialDinner';
+    menuNav.id = 'menuNav';
+    lunchToggle.id = 'lunchToggle';
+    dinnerToggle.id = 'dinnerToggle';
+    lunchMenu.id = 'lunchMenu';
+    dinnerMenu.id = 'dinnerMenu';
+
+
 
     navBar.className = 'navBar';
     navMenu.className = 'navMenu';
@@ -48,7 +71,30 @@ function initialLoad () {
             homeTitle.className = 'homeTitle';
             homeBody.className = 'homeBody';
             est.className = 'est';
-        
+
+    menuInitial.className = 'menuInitial';
+        initialLunch.className = 'initialTitle';
+        initialDinner.className = 'initialTitle';
+    menuNav.className = 'menuNav';
+    lunchToggle.className = 'menuToggle';
+    dinnerToggle.className = 'menuToggle';
+    lunchMenu.className = 'menu';  
+    dinnerMenu.className = 'menu';
+
+
+    menuInitial.style.display = 'none';
+    menuNav.style.display = 'none';
+    lunchToggle.style.display = 'none';
+    dinnerToggle.style.display = 'none';
+    lunchMenu.style.display = 'none';
+    dinnerMenu.style.display = 'none';
+
+    textBox.appendChild(menuInitial);
+    textBox.appendChild(menuNav);
+        menuNav.appendChild(lunchToggle);
+        menuNav.appendChild(dinnerToggle);
+    textBox.appendChild(lunchMenu);
+    textBox.appendChild(dinnerMenu);
 
     homeLink.appendChild(homeLinkText);
     menuLink.appendChild(menuLinkText);
@@ -68,6 +114,11 @@ function initialLoad () {
     navMenu.appendChild(homeLink);
     navMenu.appendChild(menuLink);
     navMenu.appendChild(contactLink);
+
+    menuInitial.appendChild(initialLunch);
+    menuInitial.appendChild(initialDinner);
+    initialLunch.appendChild(initialLunchText);
+    initialDinner.appendChild(initialDinnerText);
 }
 
 export {initialLoad};

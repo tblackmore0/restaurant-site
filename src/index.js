@@ -13,3 +13,4 @@ menuButton.addEventListener("click", menuPageLoad);
 
 let homeButton = document.getElementById('homeLinkButton');
 homeButton.addEventListener("click", homePageLoad);
+
