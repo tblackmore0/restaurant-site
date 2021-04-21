@@ -304,7 +304,6 @@
         text-align: center;
         justify-content: center;
         align-self: center;
-        text-align: center;
         height: 10%;
         width: 20%;
         max-width: 100%;
@@ -318,5 +317,19 @@
         display: none;
         order: 3;
         width: 100%;
-
+        grid-template-columns: repeat(2, auto);
+        transition: all 0.2s ease-in;
+        
     }
+
+        .menuItem {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5vw;
+            color:  rgb(231, 245, 155);
+            text-align: center;
+            justify-content: center;
+            height: auto;
+            width: auto;
+            display: none;
+            transition: all 0.2s ease-in;
+        }

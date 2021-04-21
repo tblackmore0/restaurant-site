@@ -28,8 +28,8 @@ function initialLoad () {
     let menuNav = document.createElement('div');
     let lunchToggle = document.createElement('div');
     let dinnerToggle = document.createElement('div');
-    let lunchMenu = document.createElement('div');
-    let dinnerMenu = document.createElement('div');
+    let menu = document.createElement('div');
+
 
     let initialLunch = document.createElement('div');
     let initialDinner = document.createElement('div');
@@ -37,6 +37,21 @@ function initialLoad () {
         let initialDinnerText = document.createTextNode('');
         initialLunch.innerHTML = 'Lunch<br/>12-2';
         initialDinner.innerHTML = 'Dinner<br/>6-9';
+
+        let menuItem1 = document.createElement('div');
+        let menuItem2 = document.createElement('div');
+        let menuItem3 = document.createElement('div');
+        let menuItem4 = document.createElement('div');
+        let menuItem5 = document.createElement('div');
+        let menuItem6 = document.createElement('div');
+
+        let menuItem1Text = document.createTextNode('');
+        let menuItem2Text = document.createTextNode('');
+        let menuItem3Text = document.createTextNode('');
+        let menuItem4Text = document.createTextNode('');
+        let menuItem5Text = document.createTextNode('');
+        let menuItem6Text = document.createTextNode('');
+
 
 
     homeLink.id = 'homeLinkButton';
@@ -56,8 +71,15 @@ function initialLoad () {
     menuNav.id = 'menuNav';
     lunchToggle.id = 'lunchToggle';
     dinnerToggle.id = 'dinnerToggle';
-    lunchMenu.id = 'lunchMenu';
-    dinnerMenu.id = 'dinnerMenu';
+    menu.id = 'menu';
+
+    menuItem1.id = 'menuItem1'
+    menuItem2.id = 'menuItem2'
+    menuItem3.id = 'menuItem3'
+    menuItem4.id = 'menuItem4'
+    menuItem5.id = 'menuItem5'
+    menuItem6.id = 'menuItem6'
+
 
 
 
@@ -78,23 +100,40 @@ function initialLoad () {
     menuNav.className = 'menuNav';
     lunchToggle.className = 'menuToggle';
     dinnerToggle.className = 'menuToggle';
-    lunchMenu.className = 'menu';  
-    dinnerMenu.className = 'menu';
+    menu.className = 'menu';  
+
+    menuItem1.className = 'menuItem';
+    menuItem2.className = 'menuItem';
+    menuItem3.className = 'menuItem';
+    menuItem4.className = 'menuItem';
+    menuItem5.className = 'menuItem';
+    menuItem6.className = 'menuItem';
+
 
 
     menuInitial.style.display = 'none';
     menuNav.style.display = 'none';
     lunchToggle.style.display = 'none';
     dinnerToggle.style.display = 'none';
-    lunchMenu.style.display = 'none';
-    dinnerMenu.style.display = 'none';
+    menu.style.display = 'none';
 
     textBox.appendChild(menuInitial);
     textBox.appendChild(menuNav);
         menuNav.appendChild(lunchToggle);
         menuNav.appendChild(dinnerToggle);
-    textBox.appendChild(lunchMenu);
-    textBox.appendChild(dinnerMenu);
+    textBox.appendChild(menu);
+        menu.appendChild(menuItem1);
+        menu.appendChild(menuItem2);
+        menu.appendChild(menuItem3);
+        menu.appendChild(menuItem4);
+        menu.appendChild(menuItem5);
+        menu.appendChild(menuItem6);
+            menuItem1.appendChild(menuItem1Text);
+            menuItem2.appendChild(menuItem2Text);
+            menuItem3.appendChild(menuItem3Text);
+            menuItem4.appendChild(menuItem4Text);
+            menuItem5.appendChild(menuItem5Text);
+            menuItem6.appendChild(menuItem6Text);
 
     homeLink.appendChild(homeLinkText);
     menuLink.appendChild(menuLinkText);

@@ -1,69 +1,97 @@
 function menuPageLoad () {
 
-    let content = document.getElementById('content');
-    content.style.backgroundImage = "url('/dist/Images/Menu.jpeg')";
+    let initialTitles = document.querySelectorAll('.initialTitle');
+    let menuInitial = document.getElementById('menuInitial');
+    let menuNav = document.getElementById('menuNav');
+    let lunchToggle = document.getElementById('lunchToggle');
+    let dinnerToggle = document.getElementById('dinnerToggle');
+    let initialLunch = document.getElementById('initialLunch');
+    let initialDinner = document.getElementById('initialDinner');
+    let menu = document.getElementById('menu'); 
+    let menuItem1 = document.getElementById('menuItem1');
+    let menuItem2 = document.getElementById('menuItem2');
+    let menuItem3 = document.getElementById('menuItem3');
+    let menuItem4 = document.getElementById('menuItem4');
+    let menuItem5 = document.getElementById('menuItem5');
+    let menuItem6 = document.getElementById('menuItem6');
 
-    let textBox = document.getElementById('textBox');
-    textBox.style.opacity = '0%';
+    initialLunch.addEventListener("click", showLunchMenu);
+    initialDinner.addEventListener("click", showDinnerMenu);
 
-    let main = document.getElementById('main');
-    let title = document.getElementById('homeTitle');
-    let body = document.getElementById('homeBody');
-    let est = document.getElementById('est');
+        let content = document.getElementById('content');
+        content.style.backgroundImage = "url('/dist/Images/Menu.jpeg')";
+
+        let textBox = document.getElementById('textBox');
+        textBox.style.opacity = '0%';
+        menuNav.style.display = 'none';
+        menu.style.display = 'none';
+
+        let main = document.getElementById('main');
+        let title = document.getElementById('homeTitle');
+        let body = document.getElementById('homeBody');
+        let est = document.getElementById('est');
 
 
-    title.style.display = 'none';
-    body.style.display = 'none';
-    est.style.display = 'none';
+        title.style.display = 'none';
+        body.style.display = 'none';
+        est.style.display = 'none';
+
 
 
     setTimeout(function(){
-        textBox.className = 'textBoxMenuInitial'
-        textBox.style.opacity= '100%'
-        main.style.justifyContent = 'center'
+        textBox.className = 'textBoxMenuInitial';
+        textBox.style.opacity= '100%';
+        main.style.justifyContent = 'center';
 
 
+        menuInitial.style.opacity = '100%';
         menuInitial.style.display = 'flex';
 
     }, 900);
 
-    
-let initialTitles = document.querySelectorAll('.initialTitle');
-let menuInitial = document.getElementById('menuInitial');
-let menuNav = document.getElementById('menuNav');
-let lunchToggle = document.getElementById('lunchToggle');
-let dinnerToggle = document.getElementById('dinnerToggle');
-let initialLunch = document.getElementById('initialLunch');
-let initialDinner = document.getElementById('initialDinner');
-let lunchMenu = document.getElementById('lunchMenu');
-let dinnerMenu = document.getElementById('dinnerMenu');
-
-
-initialLunch.addEventListener("click", showLunchMenu);
-initialDinner.addEventListener("click", showDinnerMenu);
 
 function showLunchMenu() {
     menuInitial.style.display = 'none';
     textBox.className = 'textBoxMenu';
 
-    menuNav.style.display = 'flex';
     lunchToggle.style.display = 'flex';
     dinnerToggle.style.display = 'flex';
+
 
     title.style.display = 'flex';
     title.className = 'menuTitle';
 
-    title.style.opacity = '0%'
+    title.style.opacity = '0%';
+    menu.style.opacity = '0%';
         setTimeout (function () {
             title.innerHTML = 'Lunch: 12-2';
             title.style.opacity = '100%';
-        }, 200);
+            menu.style.opacity = '100%';
+            menuNav.style.opacity = '100%';
+            menuNav.style.display = 'flex';
+            lunchToggle.style.opacity = '100%';
+            dinnerToggle.style.opacity= '100%';
 
-    lunchMenu.style.display = 'flex';
-    dinnerMenu.style.display = 'none';
+            menu.style.display = 'grid';
+            menuItem1.style.display = 'flex';
+            menuItem2.style.display = 'flex';
+            menuItem3.style.display = 'flex';
+            menuItem4.style.display = 'flex';
+            menuItem5.style.display = 'none';
+            menuItem6.style.display = 'none';
+            
+            menuItem1.innerHTML = '1';
+            menuItem2.innerHTML = '2';
+            menuItem3.innerHTML = '3';
+            menuItem4.innerHTML = '4';
+            menuItem5.innerHTML = '';
+            menuItem6.innerHTML = '';
+    
+        lunchToggle.style.backgroundColor = 'rgb(231, 245, 155)';
+        dinnerToggle.style.backgroundColor = '';
+        }, 300);
 
-    lunchToggle.style.backgroundColor = 'rgb(231, 245, 155)';
-    dinnerToggle.style.backgroundColor = '';
+
 
     addToggleListeners ();
 
@@ -73,25 +101,44 @@ function showDinnerMenu () {
     menuInitial.style.display = 'none';
     textBox.className = 'textBoxMenu';
 
-    menuNav.style.display = 'flex';
     dinnerToggle.style.display = 'flex';
     lunchToggle.style.display = 'flex';
 
     title.style.display = 'flex';
     title.className = 'menuTitle';
 
-    title.style.opacity = '0%'
+    title.style.opacity = '0%';
+    menu.style.opacity = '0%';
         setTimeout (function () {
             title.innerHTML = 'Dinner: 6-9';
             title.style.opacity = '100%';
-        }, 200);
+            menu.style.opacity = '100%';
+            menuNav.style.opacity = '100%';
+            menuNav.style.display = 'flex';
+            lunchToggle.style.opacity = '100%';
+            dinnerToggle.style.opacity= '100%';
+
+            menu.style.display = 'grid'
+            menuItem1.style.display = 'flex';
+            menuItem2.style.display = 'flex';
+            menuItem3.style.display = 'flex';
+            menuItem4.style.display = 'flex';
+            menuItem5.style.display = 'flex';
+            menuItem6.style.display = 'flex';
+    
+            menuItem1.innerHTML = '1';
+            menuItem2.innerHTML = '2';
+            menuItem3.innerHTML = '3';
+            menuItem4.innerHTML = '4';
+            menuItem5.innerHTML = '5';
+            menuItem6.innerHTML = '6';
+    
+        dinnerToggle.style.backgroundColor = 'rgb(231, 245, 155)';
+        lunchToggle.style.backgroundColor = '';
+        }, 300);
    
 
-    dinnerMenu.style.display = 'flex'
-    lunchMenu.style.display = 'none'
 
-    dinnerToggle.style.backgroundColor = 'rgb(231, 245, 155)';
-    lunchToggle.style.backgroundColor = '';
 
     addToggleListeners ();
 }
@@ -105,4 +152,27 @@ function addToggleListeners () {
     
 }
 
-export {menuPageLoad}
+function hideMenu () {
+    let title = document.getElementById('homeTitle');
+    let body = document.getElementById('homeBody');
+    let est = document.getElementById('est');
+
+    menu.style.opacity = '0%';
+    menuInitial.style.opacity = '0%';
+    menuNav.style.opacity = '0%';
+    lunchToggle.style.opacity = '0%';
+    dinnerToggle.style.opacity = '0%';
+
+    setTimeout (function () {
+        title.style.display = '';
+        body.style.display = '';
+        est.style.display = '';
+        menu.style.display = 'none';
+        menuInitial.style.display = 'none';
+        menuNav.style.display = 'none';
+        lunchToggle.style.display = 'none';
+        dinnerToggle.style.display = 'none';
+    }, 900);
+}
+
+export {menuPageLoad, hideMenu}
