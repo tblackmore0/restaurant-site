@@ -80,10 +80,10 @@ function showLunchMenu() {
             menuItem5.style.display = 'none';
             menuItem6.style.display = 'none';
             
-            menuItem1.innerHTML = '1';
-            menuItem2.innerHTML = '2';
-            menuItem3.innerHTML = '3';
-            menuItem4.innerHTML = '4';
+            menuItem1.innerHTML = '<u>Panzanella</u>Bread soaked in water and vinegar, and dressed with fresh onions, basil, tomatoes, and cucumber';
+            menuItem2.innerHTML = '<u>Fagioli all’uccelletto</u>Beans cooked with sage, garlic, olive oil, and tomatoes';
+            menuItem3.innerHTML = '<u>Ribolita</u>Bean and kale soup served with toasted bread';
+            menuItem4.innerHTML = '<u>Torta di ceci</u>Chickpea flour cake with grilled aubergine';
             menuItem5.innerHTML = '';
             menuItem6.innerHTML = '';
     
@@ -126,12 +126,12 @@ function showDinnerMenu () {
             menuItem5.style.display = 'flex';
             menuItem6.style.display = 'flex';
     
-            menuItem1.innerHTML = '1';
-            menuItem2.innerHTML = '2';
-            menuItem3.innerHTML = '3';
-            menuItem4.innerHTML = '4';
-            menuItem5.innerHTML = '5';
-            menuItem6.innerHTML = '6';
+            menuItem1.innerHTML = '<u>Cacciucco alla Livornese</u>Stew made with octopus, squid, clams, mussels and monkfish';
+            menuItem2.innerHTML = '<u>Potato tortelli</u>Fresh pasta filled with game meat sauce';
+            menuItem3.innerHTML = '<u>Spezzatino</u>Slow-cooked stew prepared with cuts of the day';
+            menuItem4.innerHTML = '<u>Pappardelle al cinghiale</u>Fresh pasta with wild boar ragu';
+            menuItem5.innerHTML = '<u>Bistecca alla Fiorentina</u>Dry-aged beef steak with side salad';
+            menuItem6.innerHTML = '<u>Faraona arrosto</u>Roasted guinea-fowl served with chicory in olive oil and garlic';
     
         dinnerToggle.style.backgroundColor = 'rgb(231, 245, 155)';
         lunchToggle.style.backgroundColor = '';
