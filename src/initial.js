@@ -80,9 +80,6 @@ function initialLoad () {
     menuItem5.id = 'menuItem5'
     menuItem6.id = 'menuItem6'
 
-
-
-
     navBar.className = 'navBar';
     navMenu.className = 'navMenu';
         homeLink.className = 'navLink';
@@ -93,8 +90,6 @@ function initialLoad () {
             homeTitle.className = 'homeTitle';
             homeBody.className = 'homeBody';
             est.className = 'est';
-
-    content.classList.add('preload');
 
     menuInitial.className = 'menuInitial';
         initialLunch.className = 'initialTitle';

@@ -1,7 +1,6 @@
 function contactPageLoad () {
     let content = document.getElementById('content');
     content.style.backgroundImage = "url('./images/contact.jpeg')";
-    content.classList.remove('preload');
 
     let title = document.getElementById('homeTitle');
     let body = document.getElementById('homeBody');
