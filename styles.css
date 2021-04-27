@@ -15,6 +15,13 @@
     transition: background-image 0.8s ease-in-out;
 }
 
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
+
 body {
     background-color:rgb(12, 12, 51);
 }
