@@ -1,6 +1,6 @@
 function contactPageLoad () {
     let content = document.getElementById('content');
-    content.style.backgroundImage = "url('/dist/images/contact.jpeg')";
+    content.style.backgroundImage = "url('./images/contact.jpeg')";
 
     let title = document.getElementById('homeTitle');
     let body = document.getElementById('homeBody');

@@ -8,7 +8,7 @@ function homePageLoad () {
     let main = document.getElementById('main');
 
     textBox.style.opacity = '0%';
-    content.style.backgroundImage = "url('/dist/images/homepage.jpeg')";
+    content.style.backgroundImage = "url('./images/homepage.jpeg')";
 
     setTimeout(function(){
         textBox.className = 'textBox';
