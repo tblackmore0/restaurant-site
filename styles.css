@@ -21,6 +21,7 @@ body {
 
 body:not(.loaded) #slider img {
     display:none;
+    content:url('./images/homepage.jpeg') url('./images/contact.jpeg') url('./images/menu.jpeg'); 
   }
 
 body::after{
