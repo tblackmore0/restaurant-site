@@ -19,7 +19,7 @@ function menuPageLoad () {
     initialDinner.addEventListener("click", showDinnerMenu);
 
         let content = document.getElementById('content');
-        content.style.backgroundImage = "url('/dist/Images/Menu.jpeg')";
+        content.style.backgroundImage = "url('./dist/Images/Menu.jpeg')";
 
         let textBox = document.getElementById('textBox');
         textBox.style.opacity = '0%';
