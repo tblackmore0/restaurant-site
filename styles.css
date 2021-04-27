@@ -13,7 +13,6 @@
     background-image: url('./images/homepage.jpeg');
     background-size: cover;
     transition: background-image 0.8s ease-in-out;
-    transition-delay: 0.6;
 }
 
 #content::after{
