@@ -9,6 +9,7 @@ function homePageLoad () {
 
     textBox.style.opacity = '0%';
     content.style.backgroundImage = "url('./images/homepage.jpeg')";
+    content.classList.remove('preload');
 
     setTimeout(function(){
         textBox.className = 'textBox';

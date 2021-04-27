@@ -20,6 +20,7 @@ function menuPageLoad () {
 
         let content = document.getElementById('content');
         content.style.backgroundImage = "url('./images/menu.jpeg')";
+        content.classList.remove('preload');
 
         let textBox = document.getElementById('textBox');
         textBox.style.opacity = '0%';

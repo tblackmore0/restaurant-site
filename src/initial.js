@@ -94,6 +94,8 @@ function initialLoad () {
             homeBody.className = 'homeBody';
             est.className = 'est';
 
+    content.classList.add('preload');
+
     menuInitial.className = 'menuInitial';
         initialLunch.className = 'initialTitle';
         initialDinner.className = 'initialTitle';
